@@ -1,0 +1,11 @@
+
+.visible-md-max {
+    @media (max-width: $screen-md) {
+      display: block !important;
+    }
+}
+.hidden-md-max {
+    @media (min-width: $screen-md) {
+      display: none !important;
+    }
+}

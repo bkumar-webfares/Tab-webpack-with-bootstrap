@@ -1,7 +1,13 @@
-body{
-    background-color: pink;
-    width: 100%;
-    height: 100%;
-    h1{color: red;}
-    p{color: blue;}
-}
+
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+@import "scss/customvariables";
+@import "~bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "scss/customStyle";
+@import "scss/customheader";
+@import "scss/responsive";
+@import "scss/sidebar";
+@import "scss/custommixins";
+@import "scss/footer";
+
+

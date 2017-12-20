@@ -5,11 +5,17 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server",
-    "prod": "webpack -p"
+    "prod": "npm run clean &&  webpack -p",
+    "clean": "rimraf ./dist/*"
   },
   "author": "Basant",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "font-awesome-webpack": "0.0.5-beta.2",
+    "less": "^2.7.3",
+    "rimraf": "^2.6.2",
     "webpack": "^3.8.1",
     "webpack-dev": "^1.1.0",
     "webpack-dev-server": "^2.9.5"
