@@ -4,8 +4,6 @@ import './bootstrap-tabcollapse.js';
 $(document).ready(function () {
   $('[data-toggle="offcanvas"]').click(function () {
     $('.row-offcanvas').toggleClass('active')
-  });
-  
+  });  
 });
 $('#myTab').tabCollapse();
-  
