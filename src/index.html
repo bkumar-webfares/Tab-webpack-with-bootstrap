@@ -3,268 +3,432 @@
   <head>
     <meta charset="UTF-8">
     <title><%= htmlWebpackPlugin.options.title %></title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/css/uikit.min.css" />
   </head>
   <body>
-      <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
-
-          <nav class="uk-navbar uk-margin-large-bottom">
-              <a class="uk-navbar-brand uk-hidden-small" href="layouts_frontpage.html">Brand</a>
-              <ul class="uk-navbar-nav uk-hidden-small">
-                  <li class="uk-active">
-                      <a href="layouts_frontpage.html">Frontpage</a>
-                  </li>
-                  <li>
-                      <a href="layouts_portfolio.html">Portfolio</a>
-                  </li>
-                  <li>
-                      <a href="layouts_blog.html">Blog</a>
-                  </li>
-                  <li>
-                      <a href="layouts_documentation.html">Documentation</a>
-                  </li>
-                  <li>
-                      <a href="layouts_contact.html">Contact</a>
-                  </li>
-                  <li>
-                      <a href="layouts_login.html">Login</a>
-                  </li>
+  <div class="container">
+    <div class="bg-white mainContainer">
+        <!-- /.navbar -->
+        <nav class="navbar">
+          <div class="navbar-header">            
+            <a class="navbar-brand" href="#"><img src=<%= require("./img/logo.png")%> /></a> <span class="tagline">I TABS - North America</span>
+          </div>
+          <div>
+            <ul class="nav navbar-nav userAccount">
+              <li><a href="#">Welcome Ian</a></li>
+              <li><a href="#"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i> <span class="badge notification">5</span></a></li>
+              <li><a href="#"><i class="fa fa-key fa-lg" aria-hidden="true"></i> <span class="badge notification">5</span></a></li>
+            </ul>
+          </div>
+          
+        </nav><!-- /.navbar -->
+        <div class="clearfix"></div>
+        <div class="row-offcanvas row-offcanvas-left">
+          <!-- Left sidebar -->
+          <div class="page-sidebar sidebar-offcanvas" id="sidebar">
+            <div class="sidebar-yellow">
+              <ul>
+                <li><a href="#">CRS Direct</a></li>
+                <li><a href="#">BA Direct</a></li>
+                <li><a href="#">Admin Clients</a></li>
+                <li><a href="#">Retrieve Booking</a></li>
+                <li><a href="#">VIPER Link</a></li>
+                <li><a href="#">Admin Fares</a></li>
+                <li><a href="#">List Bookings</a></li>
+                <li><a href="#">Online Activation</a></li>
+                <li><a href="#">Admin System</a></li>
+                <li><a href="#">Fares Display</a></li>
+                <li><a href="#">GT Managers</a></li>
+                <li><a href="#">Admin DP</a></li>
+                <li><a href="#">Administration</a></li>
+                <li><a href="#">System Setup</a></li>
+                <li><a href="#">Webmaster</a></li>
+                <li><a href="#">Daily Messages</a></li>
+                <li><a href="#">Logout Amadeus</a></li>
+                <li><a href="#">Logout</a></li>
               </ul>
-              <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
-              <div class="uk-navbar-brand uk-navbar-center uk-visible-small">Brand</div>
-          </nav>
-
-          <div class="uk-grid" data-uk-grid-margin>
-              <div class="uk-width-medium-1-1">
-
-                  <div class="uk-vertical-align uk-text-center" style="background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjQsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkViZW5lXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTEzMHB4IiBoZWlnaHQ9IjQ1MHB4IiB2aWV3Qm94PSIwIDAgMTEzMCA0NTAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDExMzAgNDUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxyZWN0IGZpbGw9IiNGNUY1RjUiIHdpZHRoPSIxMTMwIiBoZWlnaHQ9IjQ1MCIvPg0KPC9zdmc+DQo=') 50% 0 no-repeat; height: 450px;">
-                      <div class="uk-vertical-align-middle uk-width-1-2">
-                          <h1 class="uk-heading-large">Sample Heading</h1>
-                          <p class="uk-text-large">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo.</p>
-                          <p>
-                              <a class="uk-button uk-button-primary uk-button-large" href="#">Button</a>
-                              <a class="uk-button uk-button-large" href="#">Button</a>
-                          </p>
-                      </div>
-                  </div>
-
-              </div>
-          </div>
-
-          <div class="uk-grid" data-uk-grid-margin>
-              <div class="uk-width-medium-1-3">
-                  <div class="uk-grid">
-                      <div class="uk-width-1-6">
-                          <i class="uk-icon-cog uk-icon-large uk-text-primary"></i>
-                      </div>
-                      <div class="uk-width-5-6">
-                          <h2 class="uk-h3">Sample Heading</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="uk-width-medium-1-3">
-                  <div class="uk-grid">
-                      <div class="uk-width-1-6">
-                          <i class="uk-icon-thumbs-o-up uk-icon-large uk-text-primary"></i>
-                      </div>
-                      <div class="uk-width-5-6">
-                          <h2 class="uk-h3">Sample Heading</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="uk-width-medium-1-3">
-                  <div class="uk-grid">
-                      <div class="uk-width-1-6">
-                          <i class="uk-icon-cloud-download uk-icon-large uk-text-primary"></i>
-                      </div>
-                      <div class="uk-width-5-6">
-                          <h2 class="uk-h3">Sample Heading</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-          <div class="uk-grid" data-uk-grid-margin>
-              <div class="uk-width-medium-1-3">
-                  <div class="uk-grid">
-                      <div class="uk-width-1-6">
-                          <i class="uk-icon-dashboard uk-icon-large uk-text-primary"></i>
-                      </div>
-                      <div class="uk-width-5-6">
-                          <h2 class="uk-h3">Sample Heading</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="uk-width-medium-1-3">
-                  <div class="uk-grid">
-                      <div class="uk-width-1-6">
-                          <i class="uk-icon-comments uk-icon-large uk-text-primary"></i>
-                      </div>
-                      <div class="uk-width-5-6">
-                          <h2 class="uk-h3">Sample Heading</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="uk-width-medium-1-3">
-                  <div class="uk-grid">
-                      <div class="uk-width-1-6">
-                          <i class="uk-icon-briefcase uk-icon-large uk-text-primary"></i>
-                      </div>
-                      <div class="uk-width-5-6">
-                          <h2 class="uk-h3">Sample Heading</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-          <hr class="uk-grid-divider">
-
-          <div class="uk-grid" data-uk-grid-margin>
-
-              <div class="uk-width-medium-1-2">
-                  <img width="660" height="400" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjQsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkViZW5lXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iNjYwcHgiIGhlaWdodD0iNDAwcHgiIHZpZXdCb3g9IjAgMCA2NjAgNDAwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA2NjAgNDAwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxyZWN0IGZpbGw9IiNGNUY1RjUiIHdpZHRoPSI2NjAiIGhlaWdodD0iNDAwIi8+DQo8ZyBvcGFjaXR5PSIwLjciPg0KCTxwYXRoIGZpbGw9IiNEOEQ4RDgiIGQ9Ik0yNTguMTg0LDE0My41djExM2gxNDMuNjMydi0xMTNIMjU4LjE4NHogTTM5MC4yNDQsMjQ0LjI0N0gyNzAuNDM3di04OC40OTRoMTE5LjgwOEwzOTAuMjQ0LDI0NC4yNDcNCgkJTDM5MC4yNDQsMjQ0LjI0N3oiLz4NCgk8cG9seWdvbiBmaWxsPSIjRDhEOEQ4IiBwb2ludHM9IjI3Ni44ODEsMjM0LjcxNyAzMDEuNTcyLDIwOC43NjQgMzEwLjgyNCwyMTIuNzY4IDM0MC4wMTYsMTgxLjY4OCAzNTEuNTA1LDE5NS40MzQgDQoJCTM1Ni42ODksMTkyLjMwMyAzODQuNzQ2LDIzNC43MTcgCSIvPg0KCTxjaXJjbGUgZmlsbD0iI0Q4RDhEOCIgY3g9IjMwNS40MDUiIGN5PSIxNzguMjU3IiByPSIxMC43ODciLz4NCjwvZz4NCjwvc3ZnPg0K" alt="">
-              </div>
-
-              <div class="uk-width-medium-1-2">
-                  <h1>Heading</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                  <h2>Subheading</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                  <a class="uk-button uk-button-primary" href="#">Button</a>
-              </div>
-
-          </div>
-
-          <hr class="uk-grid-divider">
-
-          <div class="uk-grid" data-uk-grid-margin>
-              <div class="uk-width-medium-1-2">
-                  <h1>Heading</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                  <h2>Subheading</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                  <a class="uk-button uk-button-primary" href="#">Button</a>
-              </div>
-
-              <div class="uk-width-medium-1-2">
-                  <img width="660" height="400" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjQsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkViZW5lXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iNjYwcHgiIGhlaWdodD0iNDAwcHgiIHZpZXdCb3g9IjAgMCA2NjAgNDAwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA2NjAgNDAwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxyZWN0IGZpbGw9IiNGNUY1RjUiIHdpZHRoPSI2NjAiIGhlaWdodD0iNDAwIi8+DQo8ZyBvcGFjaXR5PSIwLjciPg0KCTxwYXRoIGZpbGw9IiNEOEQ4RDgiIGQ9Ik0yNTguMTg0LDE0My41djExM2gxNDMuNjMydi0xMTNIMjU4LjE4NHogTTM5MC4yNDQsMjQ0LjI0N0gyNzAuNDM3di04OC40OTRoMTE5LjgwOEwzOTAuMjQ0LDI0NC4yNDcNCgkJTDM5MC4yNDQsMjQ0LjI0N3oiLz4NCgk8cG9seWdvbiBmaWxsPSIjRDhEOEQ4IiBwb2ludHM9IjI3Ni44ODEsMjM0LjcxNyAzMDEuNTcyLDIwOC43NjQgMzEwLjgyNCwyMTIuNzY4IDM0MC4wMTYsMTgxLjY4OCAzNTEuNTA1LDE5NS40MzQgDQoJCTM1Ni42ODksMTkyLjMwMyAzODQuNzQ2LDIzNC43MTcgCSIvPg0KCTxjaXJjbGUgZmlsbD0iI0Q4RDhEOCIgY3g9IjMwNS40MDUiIGN5PSIxNzguMjU3IiByPSIxMC43ODciLz4NCjwvZz4NCjwvc3ZnPg0K" alt="">
-              </div>
-          </div>
-
-          <hr class="uk-grid-divider">
-
-          <div class="uk-grid" data-uk-grid-margin>
-              <div class="uk-width-medium-1-1">
-                  <div class="uk-panel uk-panel-box uk-text-center">
-                      <p><strong>Phasellus viverra nulla ut metus.</strong> Quisque rutrum etiam ultricies nisi vel augue. <a class="uk-button uk-button-primary uk-margin-left" href="#">Button</a></p>
-                  </div>
-              </div>
-          </div>
-
-          <h1 class="uk-text-center">Our Clients</h1>
-
-          <div class="uk-grid" data-uk-grid-margin>
-              <div class="uk-width-1-2 uk-width-medium-1-3 uk-width-large-1-6">
-                  <figure class="uk-overlay uk-overlay-hover">
-                      <img width="350" height="150" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjQsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkViZW5lXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMzUwcHgiIGhlaWdodD0iMTUwcHgiIHZpZXdCb3g9IjAgMCAzNTAgMTUwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAzNTAgMTUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxyZWN0IGZpbGw9IiNGNUY1RjUiIHdpZHRoPSIzNTAiIGhlaWdodD0iMTUwIi8+DQo8ZyBvcGFjaXR5PSIwLjciPg0KCTxwYXRoIGZpbGw9IiNEOEQ4RDgiIGQ9Ik0xMzEuOTEsNDEuMXY2Ny44aDg2LjE4VjQxLjFIMTMxLjkxeiBNMjExLjE0NiwxMDEuNTQ5SDEzOS4yNlY0OC40NTFoNzEuODg3VjEwMS41NDl6Ii8+DQoJPHBvbHlnb24gZmlsbD0iI0Q4RDhEOCIgcG9pbnRzPSIxNDMuMTI5LDk1LjgzIDE1Ny45NDMsODAuMjU4IDE2My40OTQsODIuNjYgMTgxLjAwOSw2NC4wMTQgMTg3LjkwMiw3Mi4yNiAxOTEuMDE0LDcwLjM4MiANCgkJMjA3Ljg0OCw5NS44MyAJIi8+DQoJPGNpcmNsZSBmaWxsPSIjRDhEOEQ4IiBjeD0iMTYwLjI0MyIgY3k9IjYxLjk1NCIgcj0iNi40NzIiLz4NCjwvZz4NCjwvc3ZnPg0K" alt="">
-                     <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center">
-                          <div>Client Name</div>
-                      </figcaption>
-                      <a class="uk-position-cover" href="#"></a>
-                  </figure>
-              </div>
-
-              <div class="uk-width-1-2 uk-width-medium-1-3 uk-width-large-1-6">
-                   <figure class="uk-overlay uk-overlay-hover">
-                      <img width="350" height="150" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjQsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkViZW5lXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMzUwcHgiIGhlaWdodD0iMTUwcHgiIHZpZXdCb3g9IjAgMCAzNTAgMTUwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAzNTAgMTUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxyZWN0IGZpbGw9IiNGNUY1RjUiIHdpZHRoPSIzNTAiIGhlaWdodD0iMTUwIi8+DQo8ZyBvcGFjaXR5PSIwLjciPg0KCTxwYXRoIGZpbGw9IiNEOEQ4RDgiIGQ9Ik0xMzEuOTEsNDEuMXY2Ny44aDg2LjE4VjQxLjFIMTMxLjkxeiBNMjExLjE0NiwxMDEuNTQ5SDEzOS4yNlY0OC40NTFoNzEuODg3VjEwMS41NDl6Ii8+DQoJPHBvbHlnb24gZmlsbD0iI0Q4RDhEOCIgcG9pbnRzPSIxNDMuMTI5LDk1LjgzIDE1Ny45NDMsODAuMjU4IDE2My40OTQsODIuNjYgMTgxLjAwOSw2NC4wMTQgMTg3LjkwMiw3Mi4yNiAxOTEuMDE0LDcwLjM4MiANCgkJMjA3Ljg0OCw5NS44MyAJIi8+DQoJPGNpcmNsZSBmaWxsPSIjRDhEOEQ4IiBjeD0iMTYwLjI0MyIgY3k9IjYxLjk1NCIgcj0iNi40NzIiLz4NCjwvZz4NCjwvc3ZnPg0K" alt="">
-                      <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center">
-                          <div>Client Name</div>
-                      </figcaption>
-                      <a class="uk-position-cover" href="#"></a>
-                  </figure>
-              </div>
-
-              <div class="uk-width-1-2 uk-width-medium-1-3 uk-width-large-1-6">
-                 <figure class="uk-overlay uk-overlay-hover">
-                      <img width="350" height="150" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjQsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkViZW5lXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMzUwcHgiIGhlaWdodD0iMTUwcHgiIHZpZXdCb3g9IjAgMCAzNTAgMTUwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAzNTAgMTUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxyZWN0IGZpbGw9IiNGNUY1RjUiIHdpZHRoPSIzNTAiIGhlaWdodD0iMTUwIi8+DQo8ZyBvcGFjaXR5PSIwLjciPg0KCTxwYXRoIGZpbGw9IiNEOEQ4RDgiIGQ9Ik0xMzEuOTEsNDEuMXY2Ny44aDg2LjE4VjQxLjFIMTMxLjkxeiBNMjExLjE0NiwxMDEuNTQ5SDEzOS4yNlY0OC40NTFoNzEuODg3VjEwMS41NDl6Ii8+DQoJPHBvbHlnb24gZmlsbD0iI0Q4RDhEOCIgcG9pbnRzPSIxNDMuMTI5LDk1LjgzIDE1Ny45NDMsODAuMjU4IDE2My40OTQsODIuNjYgMTgxLjAwOSw2NC4wMTQgMTg3LjkwMiw3Mi4yNiAxOTEuMDE0LDcwLjM4MiANCgkJMjA3Ljg0OCw5NS44MyAJIi8+DQoJPGNpcmNsZSBmaWxsPSIjRDhEOEQ4IiBjeD0iMTYwLjI0MyIgY3k9IjYxLjk1NCIgcj0iNi40NzIiLz4NCjwvZz4NCjwvc3ZnPg0K" alt="">
-                      <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center">
-                          <div>Client Name</div>
-                      </figcaption>
-                      <a class="uk-position-cover" href="#"></a>
-                  </figure>
-              </div>
-
-              <div class="uk-width-1-2 uk-width-medium-1-3 uk-width-large-1-6">
-                  <figure class="uk-overlay uk-overlay-hover">
-                      <img width="350" height="150" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjQsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkViZW5lXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMzUwcHgiIGhlaWdodD0iMTUwcHgiIHZpZXdCb3g9IjAgMCAzNTAgMTUwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAzNTAgMTUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxyZWN0IGZpbGw9IiNGNUY1RjUiIHdpZHRoPSIzNTAiIGhlaWdodD0iMTUwIi8+DQo8ZyBvcGFjaXR5PSIwLjciPg0KCTxwYXRoIGZpbGw9IiNEOEQ4RDgiIGQ9Ik0xMzEuOTEsNDEuMXY2Ny44aDg2LjE4VjQxLjFIMTMxLjkxeiBNMjExLjE0NiwxMDEuNTQ5SDEzOS4yNlY0OC40NTFoNzEuODg3VjEwMS41NDl6Ii8+DQoJPHBvbHlnb24gZmlsbD0iI0Q4RDhEOCIgcG9pbnRzPSIxNDMuMTI5LDk1LjgzIDE1Ny45NDMsODAuMjU4IDE2My40OTQsODIuNjYgMTgxLjAwOSw2NC4wMTQgMTg3LjkwMiw3Mi4yNiAxOTEuMDE0LDcwLjM4MiANCgkJMjA3Ljg0OCw5NS44MyAJIi8+DQoJPGNpcmNsZSBmaWxsPSIjRDhEOEQ4IiBjeD0iMTYwLjI0MyIgY3k9IjYxLjk1NCIgcj0iNi40NzIiLz4NCjwvZz4NCjwvc3ZnPg0K" alt="">
-                      <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center">
-                          <div>Client Name</div>
-                      </figcaption>
-                      <a class="uk-position-cover" href="#"></a>
-                  </figure>
-              </div>
-
-              <div class="uk-width-1-2 uk-width-medium-1-3 uk-width-large-1-6">
-                   <figure class="uk-overlay uk-overlay-hover">
-                      <img width="350" height="150" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjQsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkViZW5lXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMzUwcHgiIGhlaWdodD0iMTUwcHgiIHZpZXdCb3g9IjAgMCAzNTAgMTUwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAzNTAgMTUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxyZWN0IGZpbGw9IiNGNUY1RjUiIHdpZHRoPSIzNTAiIGhlaWdodD0iMTUwIi8+DQo8ZyBvcGFjaXR5PSIwLjciPg0KCTxwYXRoIGZpbGw9IiNEOEQ4RDgiIGQ9Ik0xMzEuOTEsNDEuMXY2Ny44aDg2LjE4VjQxLjFIMTMxLjkxeiBNMjExLjE0NiwxMDEuNTQ5SDEzOS4yNlY0OC40NTFoNzEuODg3VjEwMS41NDl6Ii8+DQoJPHBvbHlnb24gZmlsbD0iI0Q4RDhEOCIgcG9pbnRzPSIxNDMuMTI5LDk1LjgzIDE1Ny45NDMsODAuMjU4IDE2My40OTQsODIuNjYgMTgxLjAwOSw2NC4wMTQgMTg3LjkwMiw3Mi4yNiAxOTEuMDE0LDcwLjM4MiANCgkJMjA3Ljg0OCw5NS44MyAJIi8+DQoJPGNpcmNsZSBmaWxsPSIjRDhEOEQ4IiBjeD0iMTYwLjI0MyIgY3k9IjYxLjk1NCIgcj0iNi40NzIiLz4NCjwvZz4NCjwvc3ZnPg0K" alt="">
-                       <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center">
-                          <div>Client Name</div>
-                      </figcaption>
-                      <a class="uk-position-cover" href="#"></a>
-                  </figure>
-              </div>
-
-              <div class="uk-width-1-2 uk-width-medium-1-3 uk-width-large-1-6">
-                   <figure class="uk-overlay uk-overlay-hover">
-                      <img width="350" height="150" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjQsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkViZW5lXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMzUwcHgiIGhlaWdodD0iMTUwcHgiIHZpZXdCb3g9IjAgMCAzNTAgMTUwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAzNTAgMTUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxyZWN0IGZpbGw9IiNGNUY1RjUiIHdpZHRoPSIzNTAiIGhlaWdodD0iMTUwIi8+DQo8ZyBvcGFjaXR5PSIwLjciPg0KCTxwYXRoIGZpbGw9IiNEOEQ4RDgiIGQ9Ik0xMzEuOTEsNDEuMXY2Ny44aDg2LjE4VjQxLjFIMTMxLjkxeiBNMjExLjE0NiwxMDEuNTQ5SDEzOS4yNlY0OC40NTFoNzEuODg3VjEwMS41NDl6Ii8+DQoJPHBvbHlnb24gZmlsbD0iI0Q4RDhEOCIgcG9pbnRzPSIxNDMuMTI5LDk1LjgzIDE1Ny45NDMsODAuMjU4IDE2My40OTQsODIuNjYgMTgxLjAwOSw2NC4wMTQgMTg3LjkwMiw3Mi4yNiAxOTEuMDE0LDcwLjM4MiANCgkJMjA3Ljg0OCw5NS44MyAJIi8+DQoJPGNpcmNsZSBmaWxsPSIjRDhEOEQ4IiBjeD0iMTYwLjI0MyIgY3k9IjYxLjk1NCIgcj0iNi40NzIiLz4NCjwvZz4NCjwvc3ZnPg0K" alt="">
-                      <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center">
-                          <div>Client Name</div>
-                      </figcaption>
-                      <a class="uk-position-cover" href="#"></a>
-                  </figure>
-              </div>
-          </div>
-
-      </div>
-
-      <div id="offcanvas" class="uk-offcanvas">
-          <div class="uk-offcanvas-bar">
-              <ul class="uk-nav uk-nav-offcanvas">
-                  <li class="uk-active">
-                      <a href="layouts_frontpage.html">Frontpage</a>
-                  </li>
-                  <li>
-                      <a href="layouts_portfolio.html">Portfolio</a>
-                  </li>
-                  <li>
-                      <a href="layouts_blog.html">Blog</a>
-                  </li>
-                  <li>
-                      <a href="layouts_documentation.html">Documentation</a>
-                  </li>
-                  <li>
-                      <a href="layouts_contact.html">Contact</a>
-                  </li>
-                  <li>
-                      <a href="layouts_login.html">Login</a>
-                  </li>
+            </div>
+            <div class="IncompleteLog">
+              <p>Incomplete Logs</p>
+              <ul>
+                <li><a href="#">21172</a></li>
+                <li><a href="#">21533</a></li>
+                <li><a href="#">23689</a></li>
+                <li><a href="#">27273</a></li>
+                <li><a href="#">27340</a></li>
+                <li><a href="#">27892</a></li>
+                <li><a href="#">27896</a></li>
+                <li><a href="#">27897</a></li>
+                <li><a href="#">27901</a></li>
+                <li><a href="#">29451</a></li>
+                <li><a href="#">29491</a></li>
+                <li><a href="#">19493</a></li>
+                <li><a href="#">29494</a></li>
+                <li><a href="#">29499</a></li>
+                <li><a href="#">30092</a></li>
+                <li><a href="#">49517</a></li>
+                <li><a href="#">49705</a></li>
+                <li><a href="#">53465</a></li>
+                <li><a href="#">55470</a></li>
+                <li><a href="#">23689</a></li>
+                <li><a href="#">27273</a></li>
+                <li><a href="#">27340</a></li>
+                <li><a href="#">27892</a></li>
+                <li><a href="#">27896</a></li>
+                <li><a href="#">27897</a></li>
+                <li><a href="#">27901</a></li>
+                <li><a href="#">29451</a></li>
+                <li><a href="#">29491</a></li>
+                <li><a href="#">19493</a></li>
+                <li><a href="#">29494</a></li>
+                <li><a href="#">29499</a></li>
+                <li><a href="#">30092</a></li>
+                <li><a href="#">49517</a></li>
+                <li><a href="#">49705</a></li>
+                <li><a href="#">53465</a></li>
+                <li><a href="#">55470</a></li>
               </ul>
+            </div>
           </div>
-      </div>
+          <!-- Left sidebar end -->
+          <!-- Right Section -->
+          <div class="SectionRight">
+            <div class="sectionContent">
+            <button type="button" class="btn btn-primary visible-xs toggleNav" data-toggle="offcanvas">Toggle Sidebar</button>
+            <nav class="navbar">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="#">Sabre</a></li>
+                  <li><a href="#">Worldspan</a></li>
+                  <li><a href="#">Amadeus</a></li>
+                  <li><a href="#">Apollo</a></li>
+                  <li><a href="#">VAYU</a></li>
+                  <li><a href="#">New Booking</a></li>
+                </ul>
+              </div>
+            </nav>
+            <!-- main navbar end -->
+            <div class="alert alert-danger">
+                TABS will not be available for 20 minutes at 0230 Central Time for system updates
+            </div>
+            <div class="form-inline text-center">
+                <div class="form-group">
+                  <label class="sr-only" for="ClentPPC">Enter AH Client PCC</label>
+                  <input type="email" class="form-control" id="ClentPPC" placeholder="Enter AH Client PCC">
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="SelectPCC">Select PCC</label>
+                  <input type="password" class="form-control" id="SelectPCC" placeholder="Select PCC">
+                </div>
+                <div class="form-group">
+                    <select class="form-control">
+                      <option>GT_List</option>
+                    </select>
+                </div>
+              </div>
+              <div class="accrdionContent">                
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="trigger">
+                              Traveler Details
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-md-8">
+                                <div class="form-inline">
+                                    <label class="align-left">Traveler Name</label>
+                                  <div class="form-group">                                  
+                                    <input type="text" class="form-control" id="firstName" placeholder="Enter Traveler’s First Name">
+                                  </div>
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" id="lastName" placeholder="Enter Traveler’s Last Name">
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-right">
+                                VIP Traveler  / VIP Company
+                            </div>
+                          </div>
+                          <!-- Traveller tabs -->
+                          <div class="row travelerTab">
+                            <ul id="myTab" class="nav nav-tabs col-md-2">
+                                <li class="active"><a href="#ABCD123" data-toggle="tab">ABCD123</a></li>
+                                <li><a href="#ABCD124" data-toggle="tab">ABCD124</a></li>
+                                <li><a href="#ABCD125" data-toggle="tab">ABCD125</a></li>
+                                <li><a href="#ABCD126" data-toggle="tab">ABCD126</a></li>
+                                <li><a href="#ABCD127" data-toggle="tab">ABCD127</a></li>
+                                <li><a href="#ABCD128" data-toggle="tab">ABCD128</a></li>
+                                <li><a href="#ABCD129" data-toggle="tab">ABCD129</a></li>
+                                <li><a href="#ABCD130" data-toggle="tab">ABCD130</a></li>
+                                <li><a href="#ABCD131" data-toggle="tab">ABCD131</a></li>
+                                <li><a href="#ABCD132" data-toggle="tab">ABCD132</a></li>
+                            </ul>
+                            <div id="myTabContent" class="tab-content col-md-10" >
+                                <div class="tab-pane fade in active" id="ABCD123">
+                                    <div class="row">
+                                      <div class="col-md-9">
+                                          <h5>ABCD123</h5>
+                                          <ul>
+                                            <li>1.1INMAN/PAUL*2999-F502-OTHER AR</li>
+                                            <li>3 DL4619M 15OCT S IDASLC HK1 1243P 140P /DCDL*JPI7AO /E</li>
+                                            <li>OPERATED BY SKYWEST DBA DELTA CONNECTION</li>
+                                            <li>4 OTH ZZ 14MAR W GK1 LAX/THANK YOU</li>
+                                            <li>5 DL 817M 16OCT M SLCLAX HK1 655A 753 A /DCDL*JPI7AO /E</li>
+                                            <li>TKT/TIME LIMIT
+                                                <ol>
+                                                    <li>T-04OCT-3PO2*AWT</li>
+                                                </ol>
+                                            </li>
+                                            <li>PHONES
+                                                <ol>
+                                                  <li>DFW817-462-0100-A</li>
+                                                  <li>DFW817-462-0100-A</li>
+                                                  <li>DFW817-870-2227-B JENNIFER</li>
+                                                  <li>ETCONLY 4088-9564</li>
+                                                  <li>DFW714-618-2692-PAUL</li>
+                                                </ol>
+                                            </li>
+                                            <li>PASSENGER EMAIL DATA EXISTS *PE TO DISPLAY ALL</li>
+                                            <li>CUSTOMER NUMBER - 012546</li>
+                                            <li>INVOICED</li>
+                                            <li>FILENAME
+                                              <ol>
+                                                  <li>BTS-3PO2/220/11-CONCUR</li>
+                                              </ol>
+                                            </li>
+                                          </ul>
+                                      </div>
+                                      <div class="col-md-3">
+                                          <div class="form-group">
+                                            <button type="submit" class="btn btn-primary btn-block">Void PNR</button>
+                                          </div>
+                                          <div class="form-group">
+                                            <button type="submit" class="btn btn-primary btn-block">Cancel PNR</button>
+                                          </div>
+                                          <div class="form-group">
+                                            <button type="submit" class="btn btn-primary btn-block">Modify PNR</button>
+                                          </div>
+                                          <div class="form-group">
+                                            <button type="submit" class="btn btn-primary btn-block">Ticket PNR</button>
+                                          </div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="ABCD124">
+                                    <h5>ABCD124</h5>
+                                </div>
+                                <div class="tab-pane fade" id="ABCD125">
+                                    <h5>ABCD125</h5>
+                                </div>
+                                <div class="tab-pane fade" id="ABCD126">
+                                    <h5>ABCD126</h5>    
+                                </div>
+                                <div class="tab-pane fade" id="ABCD127">
+                                    <h5>ABCD127</h5>    
+                                </div>
+                                <div class="tab-pane fade" id="ABCD128">
+                                    <h5>ABCD128</h5>    
+                                </div>
+                                <div class="tab-pane fade" id="ABCD129">
+                                    <h5>ABCD129</h5>    
+                                </div>
+                                <div class="tab-pane fade" id="ABCD130">
+                                    <h5>ABCD130</h5>    
+                                </div>
+                                <div class="tab-pane fade" id="ABCD131">
+                                    <h5>ABCD131</h5>    
+                                </div>
+                                <div class="tab-pane fade" id="ABCD132">
+                                    <h5>ABCD132</h5>    
+                                </div>
+                            </div>                             
+                                                       
+                          </div>
+                          <!-- Traveller tabs -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                          <a class="collapsed trigger" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            GDS System
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                              <table class="table table-bordered LocalTime">
+                                <td><span class="lead">Agency local Time</span></td>
+                                <td>PST <br/> <strong>09:00</strong></td>
+                                <td>MST <br/> <strong>10:00</strong></td>
+                                <td>CST <br/> <strong>11:00</strong></td>
+                                <td>EST <br/> <strong>12:00</strong></td>
+                                <td>GMT <br/> <strong>18:00</strong></td>
+                                <td>IST <br/> <strong>22:30</strong></td>
+                              </table>
+                            </div>
+                            <hr class="borderGray">
+                            <p><span class="text-danger">Important Notes:</span><br>
+                            Important Note 1: Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+                            Important Note 2: Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <hr class="borderGray">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <ul class="list-unstyled mt-3">
+                                    <li>Market Square Travel - 1LA/1LA - Worldspan CL# 3</li>
+                                    <li>Emergency CTC</li>
+                                    <li>Carrie Hanrahan 612-812-8892-Business</li>
+                                    <li>Cell, 763-228-0287-Personal Cell</li>
+                                    <li>Vanessa Duckworth, 612-991-0882-C</li>
+                                    <li>Zoey, 612-636-2603</li>
+                                    <li>Kristine, 763-218-2162</li>
+                                    <li>David Lovick, 612-812-5168-C</li>
+                                    <li>PrimGDS Profile - G*</li>
+                                    <li>EmpowerAir  -  -</li>
+                                    <li>Queues:</li>
+                                    <li>TKT-Q/30*C1.	CANX-Q/30*C3	AH-Q/30*C5</li>
+                                  </ul>
+                                  <ul class="list-unstyled">
+                                    <li>AH Start: Stop:</li>
+                                    <li>Sat: Sun:</li>
+                                    <li>NO Queue Monitoring for this agency</li>
+                                  </ul> 
+                                  <ul class="list-unstyled">
+                                    <li>Frequent Traveler Numbers:</li>
+                                    <li>AA12348, AA12348, AA12348, AA12348, AA12348</li>
+                                    <li>AA12348, AA12348, AA12348, AA12348, AA12348</li>
+                                  </ul>
+                                  <ul class="list-unstyled">
+                                    <li>Company Profile Rules:</li>
+                                    <li>Rule 1</li>
+                                    <li>Rule 2</li>
+                                    <li>Rule 3</li>
+                                    <li>Rule 4</li>
+                                    <li>Rule 5</li>
+                                  </ul>
+                                  <ul class="list-unstyled">
+                                    <li>Traveler Preferences:</li>
+                                    <li>Airline</li>
+                                    <li>Hotel</li>
+                                    <li>Seat Assignment</li>
+                                  </ul>
+                                </div>
+                                <div class="col-md-8">
+                                    <ul class="nav nav-pills">
+                                      <li role="presentation"><a href="#">Worldspan</a></li>
+                                      <li role="presentation"><a href="#">Display  AH-1LA</a></li>
+                                      <li role="presentation"><a href="#">LogOn: 1LA - VAYU</a></li>
+                                      <li role="presentation" class="pull-right"><a href="#" class="text-info">View History</a></li>
+                                    </ul>
+                                    <div class="TabScreen">
+                                        <img src=<%= require("./img/tabs.png")%> class="img-responsive" />
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-sm-7">
+                                        <button class="btn btn-secondary">Ticket PNR</button>
+                                        <button class="btn btn-secondary">Queue PNR</button>
+                                      </div>
+                                      <div class="col-sm-5 text-right">
+                                        <button class="btn btn-danger">End AH Transaction</button>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingThree">
+                        <h4 class="panel-title">
+                          <a class="collapsed trigger" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            AH Service Log Update
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree" >
+                        <div class="panel-body">
+                          <h5 class="text-center text-info">AH Service Log Update</h5> 
+                          <div class="row form-group">
+                            <div class="col-md-3">
+                                <input type="text" class="form-control" id="PNR" placeholder="PNR">
+                            </div>
+                            <div class="col-md-3">
+                                <select class="form-control">
+                                  <option>Call Type</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <select class="form-control">
+                                  <option>Bill Action</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <select class="form-control">
+                                  <option>Call Info</option>
+                                </select>
+                            </div>
+                          </div> 
+                          <div class="row form-group">
+                            <div class="col-md-4">
+                                <input type="text" class="form-control" id="paxName" placeholder="Pax Name">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" class="form-control" id="paxCompany" placeholder="Pax Company">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" class="form-control" id="savingAmount" placeholder="Saving Amount">
+                            </div>
+                          </div>
+                          <div class="row form-group">
+                            <div class="col-md-12">
+                                <textarea class="form-control" cols="5" rows="5" placeholder="Reson for Savings"></textarea>
+                            </div>
+                          </div>
+                          <div class="text-right">
+                            <button type="submit" class="btn btn-secondary">Update Log</button>
+                          </div>
 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
 
-      
-  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/uikit.min.js"></script>
+          </div>
+        </div>
+        <!-- Footer Start -->
+        <footer class="footer">
+          <div class="row">
+            <div class="col-md-6">
+                © 2017 Greaves Travel All Rights Reserved. <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-inline text-right">
+                <li><a href="#">Greaves Web Photos</a></li>
+                <li><a href="#">About Greaves Travel</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 </body>
 </html>
